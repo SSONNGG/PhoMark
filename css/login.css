@@ -1,0 +1,171 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+ul li {
+     float: left;
+     text-align: center;
+     height: 100%;
+ }
+
+html,body{  /*控制界面撑满整个浏览器界面*/
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+button:focus{
+    outline: none;
+}
+input:focus{
+    outline: none;
+}
+
+.gsn_background{
+    width: 100%;
+    height: 100%;
+}
+
+.background_img{    /*背景图片*/
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.left_main{ /*左侧主要界面*/
+    padding: 10px;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.7);    /*不影响内容背景颜色的设定，将透明度调整放在背景颜色的调节中*/
+    box-sizing: border-box;/*设置padding不改变div的大小*/
+    position: relative;
+
+}
+
+.main_span{
+    font-size: 16px;
+    height: 20px;
+    float: left;
+}
+.main_span li{
+    width: 85px;
+    border-left: #D81E06 3px solid;
+    margin-right: 0.5rem;
+}
+.main_span li a{
+    color: #000000;
+    font-weight: 900;
+    padding-left: 10px;
+}
+
+.main_title{
+    width: 75%;
+    margin:0 auto;
+    padding-top: 200px;
+}
+.title_first{
+    font-size: 57px;
+    font-weight: bolder;
+    display: block;
+    text-align: center;
+}
+.title_second{
+    font-size: 21px;
+    color: #858585;
+    font-weight: 600;
+    display: block;
+    line-height: 26px;
+    text-align: left;
+    padding-left: 16px;
+}
+
+.main_input{
+    width: 65%;
+    margin:40px 138px;
+    z-index: 10;
+}
+.details_item{
+    position: relative;
+}
+
+.details_item input{
+    width: 500px;
+    height: 60px;
+    padding: 10px;
+    box-sizing: border-box; /*设置padding不改变div的大小*/
+    border: none;
+    outline: none;
+    background-color: #FFFCEF;
+    border-radius: 4px;     /*设置圆角*/
+    margin-bottom: 40px;
+    font-size: 20px;
+    box-shadow: 0px 1px 4px rgba(0,0,0,0.45);
+    opacity: 0.8;
+}
+
+.details_item input:hover{ /*当鼠标在input框上时，将透明度调回1*/
+    opacity: 1;
+}
+
+.details_item label{
+    font-size: 18px;
+    position: absolute;
+    left: 10px;
+    top: 20px;
+    color: #858585;
+    font-weight: bolder;
+    z-index: 20;
+    pointer-events: none;   /*阻止用户的点击动作产生任何效果*/
+}
+.bottom_line{
+    order: 2;
+    position: absolute;
+    width: 0px;
+    height:0px;
+    left: 1px;
+    bottom: 40px;
+    background-color: red;
+    border-radius: 4px;     /*设置圆角*/
+}
+
+.main_btn{
+    width: 500px;
+    height: 60px;
+    margin-left: 138px;
+}
+.main_btn button{
+    border-radius: 4px;
+    border: none;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: bolder;
+    box-shadow: 0px 3px 6px rgba(0,0,0,0.45);
+    cursor: pointer;    /*鼠标指针移到按钮上显示手指*/
+}
+
+
+.item_input:not(:placeholder-shown) ~ .item_label,
+.item_input:focus ~ .item_label {
+    transform: scale(0.9) translate(0, -50px) ;
+}
+
+
+
+.main_btn_login{
+    width:180px;
+    height: 60px;
+    background-color: #D81E06;
+}
+.main_btn_register{
+    width:180px;
+    height: 60px;
+    margin-left: 130px;
+    background-color: #57C2FF;
+}
+
+

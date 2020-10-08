@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to PhoMark-Register</title>
+    <link rel="stylesheet" href="css/fontset.css" />
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="icon" href="img/icon_main.png" type="image/x-icon">
+</head>
+<style>
+    .pt_page_1{
+        width: 500px;
+        height: 500px;
+        background-color: red;
+    }
+    .pt_page_2{
+        width: 600px;
+        height: 600px;
+        background-color: blue;
+    }
+</style>
+
+<body>
+<div id="main">
+    <div v-bind:class="{pt_page_1:pt1,pt_page_2:pt2}">
+
+    </div>
+    <button @click="change">下一个</button>
+
+</div>
+
+
+<script src="js/vue.js"></script>
+<script>
+var put=new Vue({
+    el:"#main",
+    data:{
+        pt1:true,
+        pt2:false
+    },
+    methods:{
+        change(){
+            this.pt1=!this.pt1
+
+            this.pt2=!this.pt2
+        }
+
+    }
+})
+
+</script>
+</body>
+</html>
