@@ -6,48 +6,173 @@
     <link rel="stylesheet" href="css/fontset.css" />
     <link rel="stylesheet" href="css/register.css">
     <link rel="icon" href="img/icon_main.png" type="image/x-icon">
+    <script type="text/javascript" src="js/vue.js"></script>
 </head>
-<style>
-    .pt_page_1{
-        width: 500px;
-        height: 500px;
-        background-color: red;
-    }
-    .pt_page_2{
-        width: 600px;
-        height: 600px;
-        background-color: blue;
-    }
-</style>
 
 <body>
-<div id="main">
-    <div v-bind:class="{pt_page_1:pt1,pt_page_2:pt2}">
+
+    <div class="gsn_view" id="gsn_view">
+
+        <!--1.创建您的账户和密码-->
+        <div class="change_view1" v-show="cur==0">
+            <div class="view1_left">
+                <div class="left_radius">
+                    <canvas id="one" width="130px" height="130px"></canvas>
+                    <span class="left_num">01</span>
+                </div>
+                创建您的账户和密码
+            </div>
+
+            <div class="view1_right">
+                <button @click="cur=1" :class="{active:cur==1}">下一步：连接到邮箱</button>
+            </div>
+
+        </div>
+
+        <!--2.连接您的邮箱到账户-->
+        <div class="change_view2"  v-show="cur==1">
+            <div class="view2_left">
+                <div class="left_radius">
+                    <canvas id="two" width="130px" height="130px"></canvas>
+                    <span class="left_num">02</span>
+                </div>
+                连接您的邮箱到账户
+            </div>
+            <div class="view2_right">
+                <button @click="cur=2" :class="{active:cur==2}">下一步：完善个人信息</button>
+            </div>
+        </div>
+
+        <!--3.完善您的个人信息-->
+        <div class="change_view3"  v-show="cur==2">
+            <div class="view3_left">
+                <div class="left_radius">
+                    <canvas id="three" width="130px" height="130px"></canvas>
+                    <span class="left_num">03</span>
+                </div>
+                完善您的个人信息
+            </div>
+            <div class="view3_right">
+                <button @click="cur=3" :class="{active:cur==3}">下一步：进行实名认证</button>
+            </div>
+        </div>
+
+        <!--4.进行实名认证-->
+        <div class="change_view4" v-show="cur==3">
+            <div class="view4_left">
+                <div class="left_radius">
+                    <canvas id="four" width="130px" height="130px"></canvas>
+                    <span class="left_num">04</span>
+                </div>
+                进行实名认证
+            </div>
+            <div class="view4_right">
+                <button>完成注册</button>
+            </div>
+        </div>
 
     </div>
-    <button @click="change">下一个</button>
+</body>
 
-</div>
-
-
-<script src="js/vue.js"></script>
 <script>
-var put=new Vue({
-    el:"#main",
-    data:{
-        pt1:true,
-        pt2:false
-    },
-    methods:{
-        change(){
-            this.pt1=!this.pt1
+    var app = new Vue({
+        el: "#gsn_view",
+        data: {
+            cur: 0//默认选中第一个tab
+        }
+    });
+</script>
 
-            this.pt2=!this.pt2
+<script type="text/javascript">
+    //设置每个圆环的参数
+    drawCircle({
+        id: 'one',          //对应圆环canvas的id
+        color: '#FEA2A4',   //圆环填充颜色
+        angle: 0.25,        //角度
+        lineWidth: 15       //宽度
+    });
+    drawCircle({
+        id: 'two',
+        angle: 0.50,
+        color: '#BAAAE8',
+        lineWidth: 15
+    });
+    drawCircle({
+        id: 'three',
+        angle: 0.75,
+        lineWidth: 15,
+        color: '#C0E7FB'
+    });
+    drawCircle({
+        id: 'four',
+        angle: 1,
+        lineWidth: 15,
+        color: '#54FFD2'
+    });
+
+    //绘制圆环JS
+    function drawCircle(_options){
+        var options = _options || {};
+        //获取或定义options对象;
+        options.angle = options.angle || 1;//定义默认角度1为360度(角度范围 0-1);
+        options.color = options.color || '#FFFFFF';//定义默认颜色（包括字体和边框颜色）;
+        options.lineWidth = options.lineWidth || 10;//定义默认圆描边的宽度;
+        options.lineCap = options.lineCap || 'round';//定义描边的样式，默认为直角边，round 为圆角
+        var oBoxOne = document.getElementById(options.id);
+        var sCenter = oBoxOne.width / 2;//获取canvas元素的中心点;
+        var ctx = oBoxOne.getContext('2d');
+        var nBegin = Math.PI / 2;//定义起始角度;
+        var nEnd = Math.PI * 2;//定义结束角度;
+        var grd = ctx.createLinearGradient(0, 0, oBoxOne.width, 0);//grd定义为描边渐变样式;
+        grd.addColorStop(0, 'red');
+        grd.addColorStop(0.5, 'yellow');
+        grd.addColorStop(1, 'green');
+        /**
+         * 倘若有需要在内部自动添加文字，可以取消注释
+            ctx.textAlign = 'center';//定义字体居中;
+            ctx.font = 'normal normal bolder 20px PingFang';//定义字体加粗大小字体样式;
+            ctx.fillStyle = options.color == 'grd' ? grd : options.color;//判断文字填充样式为颜色，还是渐变色;
+            ctx.fillText((options.angle * 100) + '%', sCenter, sCenter);//设置填充文字;
+            ctx.strokeStyle = grd;
+            //设置描边样式为渐变色;    ctx.strokeText((options.angle * 100) + '%', sCenter, sCenter);    //设置描边文字(即镂空文字);
+         */
+        //ctx.fillText(options.title,12,12);
+        ctx.lineCap = options.lineCap;
+        ctx.strokeStyle = options.color == 'grd' ? grd : options.color;
+        ctx.lineWidth = options.lineWidth;
+        ctx.beginPath();//设置起始路径，这段绘制360度背景;
+        ctx.strokeStyle = '#FFFFFF';    //这是修改圆环未填充部分颜色的代码
+        ctx.arc(sCenter, sCenter, (sCenter - options.lineWidth), -nBegin, nEnd, false);
+        ctx.stroke();
+        var imd = ctx.getImageData(0, 0, 240, 240);
+
+        //绘制角度的函数
+        function draw(current) {
+            ctx.putImageData(imd, 0, 0);
+            ctx.beginPath();
+            ctx.strokeStyle = options.color == 'grd' ? grd : options.color;
+            ctx.arc(sCenter, sCenter, (sCenter - options.lineWidth), -nBegin, (nEnd * current) - nBegin, false);
+            ctx.stroke();
         }
 
+        var t = 0;
+        var timer = null;
+        function loadCanvas(angle) {
+            //该函数循环绘制指定角度，实现加载动画;
+            timer = setInterval(function(){
+                if (t > angle) {
+                    draw(options.angle);
+                    clearInterval(timer);
+                }else{
+                    draw(t);
+                    t += 0.02;
+                }
+            }, 20);
+        }
+        loadCanvas(options.angle);//载入百度比角度  0-1 范围;
+        timer = null;
     }
-})
-
 </script>
-</body>
+
+
 </html>

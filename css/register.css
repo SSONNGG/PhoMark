@@ -20,3 +20,61 @@ html,body{  /*控制界面撑满整个浏览器界面*/
     margin: 0 auto;
 }
 
+.gsn_view{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.gsn_view > div{
+    display: block;
+    float: left;
+    width: 100%;
+    height: 100%;
+}
+
+/**1.创建您的账户和密码**/
+.view1_left{
+    width:50%;
+    height: 100%;
+    float: left;
+    background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);
+}
+.left_radius{
+    float: left;
+    padding-top: 30px;
+    padding-left: 30px;
+}
+.left_num{
+    position: absolute;
+    top:60px;
+    left: 66px;
+    color: white;
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+/**2.连接您的邮箱到账户**/
+.view2_left{
+    width:50%;
+    height: 100%;
+    float: left;
+    background-image: linear-gradient(120deg, #fbc2eb 0%, #a6c1ee 100%);
+}
+
+/**3.完善您的个人信息**/
+.view3_left{
+    width:50%;
+    height: 100%;
+    float: left;
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+
+/**1.创建您的账户和密码**/
+.view4_left{
+    width:50%;
+    height: 100%;
+    float: left;
+    background-image: linear-gradient(to right, #37ecba 0%, #72afd3 100%);
+}
+
