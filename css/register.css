@@ -33,18 +33,13 @@ html,body{  /*控制界面撑满整个浏览器界面*/
     height: 100%;
 }
 
-/**1.创建您的账户和密码**/
-.view1_left{
-    width:50%;
-    height: 100%;
-    float: left;
-    background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);
-}
+/*共用圆环样式*/
 .left_radius{
     float: left;
     padding-top: 30px;
     padding-left: 30px;
 }
+/**圆环内数字的位置**/
 .left_num{
     position: absolute;
     top:60px;
@@ -54,12 +49,89 @@ html,body{  /*控制界面撑满整个浏览器界面*/
     font-weight: bolder;
 }
 
+.left_desc{
+    position: relative;
+    width: 100%;
+    top: 20%;
+}
+.desc_top{
+    float: left;
+    color: white;
+    font-size: 26px;
+    font-weight: bolder;
+    text-align: center;
+    line-height: 45px;
+}
+.desc_bottom{
+    float: left;
+    color: white;
+    font-size: 26px;
+    padding:0 8%;
+    font-weight: bolder;
+    text-align: center;
+    line-height: 170%;
+}
+.left_bottom{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+
+}
+.bottom_pos{
+    position: relative;
+}
+.bottom_icon{
+    width: 350px;
+    height:350px;
+    opacity: 0.2;
+}
+
+/**1.创建您的账户和密码**/
+.view1_left{
+    width:50%;
+    height: 100%;
+    float: left;
+    background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);
+}
+.left_title{
+    padding-top: 7%;
+    padding-left: 180px;
+}
+.left_title_max{
+    color: white;
+    font-size: 40px;
+    font-weight: bolder;
+    display: block;
+}
+.left_title_min{
+    color: white;
+    font-size: 25px;
+    font-weight: bolder;
+    display: block;
+    float: right;
+    padding-right: 40px;
+}
+
+.view1_right{
+    background-color: #F4F4F4;
+    width:50%;
+    height: 100%;
+    float: left;
+}
+
 /**2.连接您的邮箱到账户**/
 .view2_left{
     width:50%;
     height: 100%;
     float: left;
     background-image: linear-gradient(120deg, #fbc2eb 0%, #a6c1ee 100%);
+}
+.view2_right{
+    background-color: #F4F4F4;
+    width:50%;
+    height: 100%;
+    float: left;
 }
 
 /**3.完善您的个人信息**/
@@ -69,6 +141,12 @@ html,body{  /*控制界面撑满整个浏览器界面*/
     float: left;
     background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
 }
+.view3_right{
+    background-color: #F4F4F4;
+    width:50%;
+    height: 100%;
+    float: left;
+}
 
 /**1.创建您的账户和密码**/
 .view4_left{
@@ -76,5 +154,11 @@ html,body{  /*控制界面撑满整个浏览器界面*/
     height: 100%;
     float: left;
     background-image: linear-gradient(to right, #37ecba 0%, #72afd3 100%);
+}
+.view4_right{
+    background-color: #F4F4F4;
+    width:50%;
+    height: 100%;
+    float: left;
 }
 

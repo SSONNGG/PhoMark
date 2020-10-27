@@ -1,9 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:github" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="4f578a3a-5d03-4bc7-b931-2f74fb3be4e7" name="Default Changelist" comment="02-register页面切换效果实现，同时加入圆环组件">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/register.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/register.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/register.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -29,7 +48,9 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectId" id="1hpCIyIryyvXa5NBeyIoewzfcg1" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -46,17 +67,17 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="G:\WorkSpace_JavaWeb\WebStorm\new_PhoMark\img" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="G:\WorkSpace_JavaWeb\WebStorm\new_PhoMark\js" />
       <recent name="G:\WorkSpace_JavaWeb\WebStorm\new_PhoMark\img" />
       <recent name="G:\WorkSpace_JavaWeb\WebStorm\new_PhoMark\css\font" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\WorkSpace_JavaWeb\WebStorm\new_PhoMark\img" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.register.html">
@@ -102,7 +123,9 @@
       <workItem from="1602758623675" duration="4367000" />
       <workItem from="1603003019833" duration="1360000" />
       <workItem from="1603004517763" duration="4020000" />
-      <workItem from="1603008818059" duration="1027000" />
+      <workItem from="1603008818059" duration="2103000" />
+      <workItem from="1603100315888" duration="3326000" />
+      <workItem from="1603801882754" duration="4415000" />
     </task>
     <task id="LOCAL-00001" summary="01-项目文件上传">
       <created>1602171423416</created>
@@ -111,11 +134,30 @@
       <option name="project" value="LOCAL" />
       <updated>1602171423416</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="02-register页面切换效果实现，同时加入圆环组件">
+      <created>1603009867614</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1603009867614</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="01-项目文件上传" />
@@ -248,19 +290,27 @@
     <state width="1897" height="126" key="GridCell.Tab.3.right/0.30.1920.1050/1920.-465.1080.1890@0.30.1920.1050" timestamp="1601190645927" />
     <state width="1290" height="186" key="GridCell.Tab.3.right/0.30.1920.1050/1920.-542.1080.1890@0.30.1920.1050" timestamp="1602769007524" />
     <state width="1897" height="126" key="GridCell.Tab.3.right/0.30.1920.1050@0.30.1920.1050" timestamp="1601109496697" />
-    <state x="748" y="238" key="SettingsEditor" timestamp="1602746807854">
+    <state x="717" y="208" key="SettingsEditor" timestamp="1603103155985">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
     <state x="841" y="261" key="SettingsEditor/0.30.1920.1050/1920.-217.1080.1890@0.30.1920.1050" timestamp="1602171210339" />
     <state x="460" y="198" key="SettingsEditor/0.30.1920.1050/1920.-465.1080.1890@0.30.1920.1050" timestamp="1601191382702" />
-    <state x="748" y="238" key="SettingsEditor/0.30.1920.1050/1920.-542.1080.1890@0.30.1920.1050" timestamp="1602746807854" />
+    <state x="717" y="208" key="SettingsEditor/0.30.1920.1050/1920.-542.1080.1890@0.30.1920.1050" timestamp="1603103155985" />
     <state x="460" y="198" key="SettingsEditor/0.30.1920.1050@0.30.1920.1050" timestamp="1601109280901" />
-    <state x="1902" y="-589" width="954" height="848" maximized="true" key="dock-window-1" timestamp="1603009178734">
+    <state x="551" y="284" key="Vcs.Push.Dialog.v2" timestamp="1603009882627">
+      <screen x="0" y="30" width="1920" height="1050" />
+    </state>
+    <state x="551" y="284" key="Vcs.Push.Dialog.v2/0.30.1920.1050/1920.-542.1080.1890@0.30.1920.1050" timestamp="1603009882627" />
+    <state x="2061" y="7" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1603103054088">
+      <screen x="1920" y="-542" width="1080" height="1890" />
+    </state>
+    <state x="2061" y="7" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.30.1920.1050/1920.-542.1080.1890@0.30.1920.1050" timestamp="1603103054088" />
+    <state x="1920" y="-542" width="1096" height="704" maximized="true" key="dock-window-1" timestamp="1603804673453">
       <screen x="1920" y="-542" width="1080" height="1890" />
     </state>
     <state x="1913" y="-265" width="1096" height="1008" maximized="true" key="dock-window-1/0.30.1920.1050/1920.-217.1080.1890@0.30.1920.1050" timestamp="1601994989541" />
     <state x="1888" y="-512" width="1096" height="1008" maximized="true" key="dock-window-1/0.30.1920.1050/1920.-465.1080.1890@0.30.1920.1050" timestamp="1601186924353" />
-    <state x="1902" y="-589" width="954" height="848" maximized="true" key="dock-window-1/0.30.1920.1050/1920.-542.1080.1890@0.30.1920.1050" timestamp="1603009178734" />
+    <state x="1920" y="-542" width="1096" height="704" maximized="true" key="dock-window-1/0.30.1920.1050/1920.-542.1080.1890@0.30.1920.1050" timestamp="1603804673453" />
     <state x="1903" y="-585" width="1096" height="748" maximized="true" key="dock-window-2" timestamp="1602758740088">
       <screen x="1920" y="-542" width="1080" height="1890" />
     </state>
