@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <title>Welcome to PhoMark-Register</title>
     <link rel="stylesheet" href="css/fontset.css" />
-    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="css/register.css"/>
+    <link rel="stylesheet" href="css/animate.min.css"/>
     <link rel="icon" href="img/icon_main.png" type="image/x-icon">
     <script type="text/javascript" src="js/vue.js"></script>
 </head>
@@ -12,7 +13,6 @@
 <body>
 
     <div class="gsn_view" id="gsn_view">
-
         <!--1.创建您的账户和密码-->
         <div class="change_view1" v-show="cur==0">
             <div class="view1_left">
@@ -43,9 +43,9 @@
             </div>
 
             <div class="view1_right">
+                <div class="right_title_01">Register your account</div>
                 <button @click="cur=1" :class="{active:cur==1}">下一步：连接到邮箱</button>
             </div>
-
         </div>
 
         <!--2.连接您的邮箱到账户-->

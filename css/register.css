@@ -162,3 +162,16 @@ html,body{  /*控制界面撑满整个浏览器界面*/
     float: left;
 }
 
+/**右侧内容**/
+.right_title_01{
+    padding-top: 7%;
+    width: 50%;
+    padding-left: 30%;
+    font-size: 44px;
+    font-weight: bolder;
+    display: block;
+    background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);/**为文本元素提供渐变背景**/
+    -webkit-background-clip: text;      /**用文本剪辑背景，用渐变背景作为颜色填充文本**/
+    -webkit-text-fill-color: transparent;   /**使用透明颜色填充文本**/
+}
+

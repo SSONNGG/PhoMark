@@ -167,5 +167,8 @@ input:focus{
     margin-left: 130px;
     background-color: #57C2FF;
 }
+.main_btn_register > a{
+    color: #FFFFFF;
+}
 
 
